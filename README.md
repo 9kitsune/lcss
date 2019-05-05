@@ -11,7 +11,8 @@ Sensors
 - BME680
 - LSM303D
 
-Python
+Python files
 - light + time of flight
 - motion
 - air quality
+- monitoring service
