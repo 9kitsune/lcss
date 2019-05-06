@@ -7,7 +7,7 @@
 ### sensor libraries ###
 from lsm303d import LSM303D
 from bh1745 import BH1745
-from VL53L1X import VL53L1X 
+from VL53L1X import VL53L1X
 
 ### general libraries ###
 from datetime import datetime
@@ -25,11 +25,11 @@ bh.set_leds(1)
 tof.open()
 tof.start_ranging(3)
 
-### monitoring ### 
-sample_rate = 0.1  #rest 0.1 seconds before taking a sample
+### monitoring ###
+sample_rate = 0.2  #rest 0.1 seconds before taking a sample
 duration_hr = 2 # in [3] hours period
 duration = duration_hr*60*60 # in [duration_hr*60*60] seconds period
-#duration = 10 # in [10] seconds period ### TESTING ONLY ####
+### testing ### duration = 10 # in [10] seconds period ### TESTING ONLY ####
 count = duration/sample_rate # number of samples in the time period
 counter = 1
 

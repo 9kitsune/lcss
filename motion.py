@@ -16,8 +16,8 @@ from csv import writer
 lsm = LSM303D(0x1d)
 
 ### monitoring ### 
-sample_rate = 0.1  #rest 0.1 seconds before taking a sample
-duration_hr = 3 # in [3] hours period
+sample_rate = 0.2  #rest 0.1 seconds before taking a sample
+duration_hr = 1.5 # in [3] hours period
 duration = duration_hr*60*60 # in [duration_hr*60*60] seconds period
 count = duration/sample_rate # number of samples in the time period
 counter = 1
